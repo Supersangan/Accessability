@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Кастомизация интерактивных элементов</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Choises Js -->
+  <!-- <link rel="stylesheet" href="./css/choices-base.min.css" /> -->
+  <link rel="stylesheet" href="./css/choices.min.css" />
+  <script src="./js/choices.min.js"></script>
+
+  <!-- Yandex map -->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+  <!-- Simplebar -->
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@5.3.0/dist/simplebar.css">
+  <script src="https://unpkg.com/simplebar@5.3.0/dist/simplebar.min.js"></script>
+
+  <!-- Just-validate -->
+  <script src="./js/just-validate.min.js"></script>
+
+  <!-- Inputmask -->
+  <script src="./js/inputmask.min.js"></script>
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body class="page">
+  <section class="section">
+    <div class="container">
+      <form class="categories">
+        <h2 class="categories__title">Категории</h2>
+
+        <label for="categories__1" class="categories__label">
+          <input class="categories__input visually-hidden" id="categories__1" type="checkbox">
+          <span class="categories__checkbox"></span>
+          Динозавры
+        </label>
+
+        <label for="categories__2" class="categories__label">
+          <input class="categories__input visually-hidden" id="categories__2" type="checkbox">
+          <span class="categories__checkbox"></span>
+          Медведи
+        </label>
+
+        <label for="categories__3" class="categories__label">
+          <input class="categories__input visually-hidden" id="categories__3" type="checkbox">
+          <span class="categories__checkbox"></span>
+          Косули
+        </label>
+
+        <label for="categories__4" class="categories__label">
+          <input class="categories__input visually-hidden" id="categories__4" type="checkbox">
+          <span class="categories__checkbox"></span>
+          Лисы
+        </label>
+
+        <label for="categories__5" class="categories__label">
+          <input class="categories__input visually-hidden" id="categories__5" type="checkbox">
+          <span class="categories__checkbox"></span>
+          Волки
+        </label>
+
+        <label for="categories__6" class="categories__label">
+          <input class="categories__input visually-hidden" id="categories__6" type="checkbox">
+          <span class="categories__checkbox"></span>
+          Олени и лоси
+        </label>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <form action="">
+        <select class="select el_choice-js" name="matherial">
+          <option value="">Материал</option>
+          <option value="Древесина">Древесина</option>
+          <option value="Металл">Металл</option>
+          <option value="Камень">Камень</option>
+          <option value="Пластик">Пластик</option>
+          <option value="Композитный">Композитный</option>
+          <option value="Гипс">Гипс</option>
+        </select>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="map" id="map">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="custom-scroll el_scrollbar">
+        Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <form class="form el_form" action="" method="get">
+        <div class="form__field">
+          <input class="form__input"
+                 placeholder="Имя*"
+                 name="name"
+                 type="text"
+                 data-validate-field="customName">
+        </div>
+
+        <div class="form__field">
+          <input class="form__input el_phone-input"
+                 placeholder="Телефон*"
+                 name="phone"
+                 type="tel"
+                 data-validate-field="customPhone">
+        </div>
+
+        <div class="form__field">
+          <input class="form__input"
+                 placeholder="E-mail*"
+                 name="email"
+                 type="email"
+                 data-validate-field="customEmail">
+        </div>
+
+        <button class="form__button">Заказать</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="tooltip-text">
+        Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.
+        <span class="tooltip" tabindex="0">
+          <span class="tooltip__inner">
+            <span class="tooltip__contains">
+              Глава 2, страница 176
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
