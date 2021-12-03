@@ -1,3 +1,7 @@
 {
-  "root": "/"
+  "root": "/",
+  "headers": {
+    "/**": {
+      "Access-Control-Allow-Origin": "*"
+    }
 }
